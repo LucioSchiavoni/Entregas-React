@@ -1,5 +1,6 @@
 import React from 'react'
-import logo192 from "../assets/img/logo192.png"
+import CartWidget from './CartWidget'
+
 
 
 
@@ -7,7 +8,9 @@ export const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-light">
             <div className="container-fluid">
-                <img src={logo192} alt="" />
+
+                <CartWidget />
+
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

@@ -3,12 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { CartWidget } from './components/CartWidget';
+import { ItemListContainer } from './components/ItemListContainer';
+import NavBar from './components/NavBar';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <App>
+    <React.StrictMode>
+      <NavBar>
+        <CartWidget />
+      </NavBar>
+      <ItemListContainer />
+    </React.StrictMode>
+  </App>
 );
 
 // If you want to start measuring performance in your app, pass a function
