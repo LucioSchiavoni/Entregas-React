@@ -1,8 +1,10 @@
 import React from 'react'
+import ItemCount from './ItemCount'
 
-export const ItemListContainer = () => {
+export const ItemListContainer = (props) => {
     return (
-        <div><p>Falta poco para el mundial de qatar 2022, el mundial comenzara en noviembre</p></div>
+        <div><h1>{props.bienvenida}</h1></div>
+
     )
 }
 
