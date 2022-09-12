@@ -1,0 +1,51 @@
+/*HEADER*/
+
+.list {
+    display: flex;
+    padding: 1.7rem;
+    gap: 10rem;
+    margin-right: 10%;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.header {
+    background-color: coral;
+
+}
+
+.input-nav {
+    border-radius: 10px;
+    border: none;
+    height: 2rem;
+    width: 30rem;
+}
+
+
+
+/*BODY*/
+
+.body-container {
+    margin: auto;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    max-width: 95rem;
+    padding: 3rem;
+
+
+
+}
+
+.item {
+    width: 20rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.item-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    list-style: none;
+
+}

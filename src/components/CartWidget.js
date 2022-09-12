@@ -1,9 +1,10 @@
 import React from 'react'
-import Logo from "../assets/img/carrito.png";
+import './style.css'
+import Logo from '../assets/img/img/1.png'
 
 export const CartWidget = () => {
     return (
-        <img src={Logo} alt="" width={50} />
+        <img className='logo' src={Logo} alt="" width={50} />
     )
 }
 

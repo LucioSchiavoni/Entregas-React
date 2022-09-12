@@ -1,11 +1,13 @@
 import React from 'react'
-import ItemCount from './ItemCount'
+import './style.css'
+import Item from './Item'
 
-export const ItemListContainer = (props) => {
+
+export const ItemListContainer = () => {
     return (
-        <div><h1>{props.bienvenida}</h1></div>
+        <Item />
 
     )
 }
 
-export default ItemListContainer
+export default ItemListContainer;
