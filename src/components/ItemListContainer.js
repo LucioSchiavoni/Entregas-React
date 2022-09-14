@@ -1,13 +1,17 @@
-import React from 'react'
-import './style.css'
-import Item from './Item'
+import React from 'react';
+import Productos from './Productos';
+import './style.css';
+import { useEffect } from 'react';
+
+
 
 
 export const ItemListContainer = () => {
-    return (
-        <Item />
 
-    )
-}
+    return (
+        <Productos />
+    );
+
+};
 
 export default ItemListContainer;

@@ -1,24 +1,29 @@
-import React from 'react'
-import CartWidget from './CartWidget'
-import './style.css'
+import React from 'react';
+import Logo from './Logo';
+import './style.css';
 
 
 
 export const NavBar = () => {
     return (
-        <header className='header'>
-            <CartWidget />
+        <header >
+            <div class="logo-item"><Logo /></div>
             <ul className='list'>
-                <li>Inicio</li>
-                <li>Nosotros</li>
-                <li>Contacto</li>
-                <input type="text" className='input-nav' placeholder='Buscar productos..' />
+
+                <li className='list-item'>Inicio</li>
+                <li className='list-item'>Nosotros</li>
+                <li className='list-item'>Contacto</li>
+                <input type="text" id='inputId' className='input-nav' placeholder='Buscar productos..' />
+
             </ul>
 
 
         </header>
-    )
-}
+    );
 
 
-export default NavBar
+};
+
+
+
+export default NavBar;

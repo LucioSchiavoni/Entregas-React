@@ -1,24 +1,29 @@
-import React from 'react'
-import './style.css'
-import productos from './productos'
+import React from 'react';
+import ItemCount from './ItemCount';
+import './style.css';
 
-const Item = () => {
+
+const Item = (props) => {
     return (
 
 
-        <div className="body-container">
-            <ul className='item-grid'>   <li  ><img src={productos[0]} className='item' alt="" /></li>
-                <li  ><img src={productos[3]} className='item' alt="" /></li>
-                <li ><img src={productos[1]} className='item' alt="" /></li>
-                <li ><img src={productos[2]} className='item' alt="" /></li>
-            </ul>
+
+
+        <div className="card-item">
+            <img src={props.img} className="item" />
+            <hr />
+            <h5 className="item-content">{props.name}</h5>
+            <p className="item-content">Medidas: {props.medidas}</p>
+            <p className="item-content">Precio: {props.precio} $UYU</p>
+            <hr />
+            <ItemCount stock="5" initial="1" />
         </div>
 
 
 
 
-    )
-}
+    );
+};
 
 
 export default Item;
