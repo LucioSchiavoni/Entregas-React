@@ -1,7 +1,8 @@
 import React from 'react'
+import Item from './Item'
 
-export const ItemList = () => {
+export const ItemList = ({ data = [] }) => {
     return (
-        <div>ItemList</div>
+        data.map(productos => <Item key={productos.id} info={productos} />)
     )
 }
