@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 import Item from './Item';
 import img1 from '../assets/img/king3.jpeg';
 import img2 from '../assets/img/coker.jpeg';
@@ -42,8 +43,10 @@ const Productos = () => {
         },
     ]);
     return (
+
         <div class="body-container">
             <div className='item-grid'>
+
                 {productos.map((item) => {
                     return (
                         <Item key={item.id} img={item.img} name={item.name} medidas={item.medidas} precio={item.precio} />);
@@ -51,6 +54,7 @@ const Productos = () => {
             </div>
         </div>
     );
+
 };
 
 export default Productos;
