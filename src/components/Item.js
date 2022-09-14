@@ -6,7 +6,8 @@ import './style.css';
 
 const Item = ({ info }) => {
     return (
-        < div className="card-item" >
+
+        < div className="item-grid" >
             <img src={info.img} className="item" />
             <hr />
             <h5 className="item-content">{info.name}</h5>
