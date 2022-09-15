@@ -4,8 +4,9 @@ import img2 from '../assets/img/coker.jpeg';
 import img3 from '../assets/img/toy.jpeg';
 import img4 from '../assets/img/cucheta.jpeg';
 import './style.css';
-
+import ItemCount from './ItemCount';
 import { ItemList } from './ItemList';
+import CartWidget from './CartWidget';
 
 
 

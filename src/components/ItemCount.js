@@ -1,11 +1,15 @@
 import * as React from 'react';
 import './style.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 
 const ItemCount = ({ stock, initial, onAdd }) => {
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(initial);
+
+    useEffect(() => {
+        setCount(parseInt(initial))
+    }, [initial])
     return (
         <div className='box-count'>
 
@@ -16,7 +20,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
             <button className='btn btn-light' disabled={count <= 1} onClick={() => {
                 setCount(count - 1);
             }}>-</button><br /><br />
-            <button className='btn btn-light'>Añadir al carrito</button>
+            <button className='btn btn-light' disabled={stock <= 0} onClick={() => onAdd(count)}>Añadir al carrito</button>
         </div>
     );
 
