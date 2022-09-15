@@ -46,7 +46,7 @@ const productos = [
 
 ];
 
-export const ItemListContainer = ({ texto }) => {
+export const ItemListContainer = () => {
     const [data, setData] = useState([]);
 
 
