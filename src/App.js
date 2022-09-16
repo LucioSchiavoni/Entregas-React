@@ -1,7 +1,8 @@
 import React from 'react'
 import NavBar from './components/NavBar';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ItemListContainer } from './components/ItemListContainer';
+
 
 
 
@@ -9,16 +10,21 @@ import { ItemListContainer } from './components/ItemListContainer';
 
 export const App = () => {
   return (
-    <div>
-      <Router>
+
+    <>
+
+      <BrowserRouter >
         <NavBar />
 
-        <ItemListContainer />
+        <Routes>
 
+          <Route path='/' element={<ItemListContainer />} />
+        </Routes>
 
-      </Router>
+      </BrowserRouter>
 
-    </div>
+    </>
+
   )
 }
 

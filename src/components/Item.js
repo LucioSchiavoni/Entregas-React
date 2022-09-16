@@ -1,20 +1,15 @@
 import React from 'react';
-import ItemCount from './ItemCount';
-
+import { Link } from 'react-router-dom';
 import './style.css';
 
 
 const Item = ({ info }) => {
     return (
-
-        < div className="item-grid" >
-            <img src={info.img} className="item" />
+        <div>
+            <img className='item' src={info.img} alt="" />
             <hr />
             <h5 className="item-content">{info.name}</h5>
-            <p className="item-content">Medidas: {info.medidas}</p>
-            <p className="item-content">Precio: {info.precio} $UYU</p>
-            <hr />
-            <ItemCount stock="5" initial="1" />
+            <Link to='/ItemDetail' className='btn btn-light'> Detalles</Link>
         </div>
 
     );

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './style.css';
-import { ItemList } from './ItemList';
+import React, { useEffect, useState } from 'react'
+import ItemDetail from './ItemDetail';
 import qatar from '../assets/img/qatar.png';
 import qatar2 from '../assets/img/qatar2.png';
 import ecuador from '../assets/img/ecuador.png';
@@ -356,30 +355,22 @@ const productos = [
     },
 
 ];
+export const ItemDetailContainer = () => {
 
-export const ItemListContainer = () => {
-    const [data, setData] = useState([]);
-
-
+    const [data, setData] = useState({});
     useEffect(() => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
                 resolve(productos);
-            }, 3000);
+
+            }, 2000)
         });
         getData.then(res => setData(res));
     }, [])
 
-
-
-
-
     return (
-        <>
-
-            <ItemList data={data} />
-
-        </>
+        <ItemDetail data={data} />
     )
-};
+}
 
+export default ItemDetailContainer;

@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
-import Portada from '../assets/img/logo-negro.jpeg';
-
+import Portada from '../assets/img/logo.png'
 export const Logo = () => {
     return (
         <img className='logo' src={Portada} width={100} />
