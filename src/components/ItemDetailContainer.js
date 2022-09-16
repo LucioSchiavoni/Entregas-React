@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import { useParams } from 'react-router-dom'; 
 import ItemDetail from './ItemDetail';
 import qatar from '../assets/img/qatar.png';
 import qatar2 from '../assets/img/qatar2.png';
@@ -66,6 +66,7 @@ import uruguay2 from '../assets/img/uruguay2.png';
 import korea from '../assets/img/proximamente.png';///faltan
 import korea2 from '../assets/img/proximamente.png';///faltan
 import proximamente from '../assets/img/proximamente.png';
+
 
 const productos = [
 
@@ -359,6 +360,7 @@ const productos = [
 export const ItemDetailContainer = () => {
 
     const [data, setData] = useState({});
+    const [detalleId] = useParams
     useEffect(() => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
@@ -366,7 +368,7 @@ export const ItemDetailContainer = () => {
 
             }, 2000)
         });
-        getData.then(res => setData(res));
+        getData.then(res => setData(res.find(productos => productos.id === parseInt(detalleId))));
     }, [])
 
     return (

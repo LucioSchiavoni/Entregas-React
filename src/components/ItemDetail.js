@@ -13,8 +13,8 @@ export const ItemDetail = ({ data }) => {
 
 
     return (
-        <div >
-            <img src={data.img} className="item" /> <hr />
+        <div>
+            <img src={data.img} className="item" /> 
             <h5 className="item-content">{data.name}</h5>
             <p className="item-content">marca: {data.marca}</p>
             <p className="item-content"> precio: {data.precio}</p>

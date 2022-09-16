@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from './components/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ItemListContainer } from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 
 
@@ -17,8 +18,8 @@ export const App = () => {
         <NavBar />
 
         <Routes>
-
           <Route path='/' element={<ItemListContainer />} />
+          <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>}/>
         </Routes>
 
       </BrowserRouter>
