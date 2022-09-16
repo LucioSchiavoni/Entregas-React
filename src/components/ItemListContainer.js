@@ -117,8 +117,8 @@ const productos = [
         name: "Iran",
         precio: 145,
         marca: "",
-        img: proximamente,
-        img2: proximamente
+        img: iran,
+        img2: iran2
 
     },
     {
@@ -198,8 +198,8 @@ const productos = [
         name: "Dinamarca",
         precio: 145,
         marca: "",
-        img: proximamente,
-        img2: proximamente
+        img: dinamarca,
+        img2: dinamarca2
 
     },
     {
@@ -207,8 +207,8 @@ const productos = [
         name: "Tunez",
         precio: 145,
         marca: "",
-        img: proximamente,
-        img2: proximamente
+        img: tunez,
+        img2: tunez2
 
     },
     {
@@ -225,8 +225,8 @@ const productos = [
         name: "Costa Rica",
         precio: 145,
         marca: "",
-        img: proximamente,
-        img2: proximamente
+        img: costaRica,
+        img2: costaRica2
 
     },
     {
@@ -315,8 +315,8 @@ const productos = [
         name: "Camerun",
         precio: 145,
         marca: "Puma",
-        img: proximamente,
-        img2: proximamente
+        img: camerun,
+        img2: camerun2
 
     },
     {
@@ -333,8 +333,8 @@ const productos = [
         name: "Ghana",
         precio: 145,
         marca: "Puma",
-        img: proximamente,
-        img2: proximamente
+        img: ghana,
+        img2: ghana2
 
     },
     {
@@ -347,11 +347,11 @@ const productos = [
 
     }, {
         id: 32,
-        name: "Korea",
+        name: "South Korea",
         precio: 145,
         marca: "Nike",
-        img: proximamente,
-        img2: proximamente
+        img: korea,
+        img2: korea2
 
     },
 
@@ -375,12 +375,12 @@ export const ItemListContainer = () => {
 
 
     return (
-        
+
         <div className='body-container'>
-<div className='item-grid'>
-            <ItemList data={data} />
+            <div className='item-grid'>
+                <ItemList data={data} />
             </div>
-            </div>     
-)
+        </div>
+    )
 };
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'; 
+import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
 import qatar from '../assets/img/qatar.png';
 import qatar2 from '../assets/img/qatar2.png';
@@ -65,7 +65,7 @@ import uruguay from '../assets/img/uruguay.png';
 import uruguay2 from '../assets/img/uruguay2.png';
 import korea from '../assets/img/proximamente.png';///faltan
 import korea2 from '../assets/img/proximamente.png';///faltan
-import proximamente from '../assets/img/proximamente.png';
+
 
 
 const productos = [
@@ -118,8 +118,8 @@ const productos = [
         name: "Iran",
         precio: 145,
         marca: "",
-        img: proximamente,
-        img2: proximamente
+        img: iran,
+        img2: iran
 
     },
     {
@@ -199,8 +199,8 @@ const productos = [
         name: "Dinamarca",
         precio: 145,
         marca: "",
-        img: proximamente,
-        img2: proximamente
+        img: dinamarca,
+        img2: dinamarca2
 
     },
     {
@@ -208,8 +208,8 @@ const productos = [
         name: "Tunez",
         precio: 145,
         marca: "",
-        img: proximamente,
-        img2: proximamente
+        img: tunez,
+        img2: tunez2
 
     },
     {
@@ -226,8 +226,8 @@ const productos = [
         name: "Costa Rica",
         precio: 145,
         marca: "",
-        img: proximamente,
-        img2: proximamente
+        img: costaRica,
+        img2: costaRica2
 
     },
     {
@@ -316,8 +316,8 @@ const productos = [
         name: "Camerun",
         precio: 145,
         marca: "Puma",
-        img: proximamente,
-        img2: proximamente
+        img: camerun,
+        img2: camerun2
 
     },
     {
@@ -334,8 +334,8 @@ const productos = [
         name: "Ghana",
         precio: 145,
         marca: "Puma",
-        img: proximamente,
-        img2: proximamente
+        img: ghana,
+        img2: ghana2
 
     },
     {
@@ -351,8 +351,8 @@ const productos = [
         name: "Korea",
         precio: 145,
         marca: "Nike",
-        img: proximamente,
-        img2: proximamente
+        img: korea,
+        img2: korea2
 
     },
 
