@@ -4,9 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import ItemListContainer from './components/ItemListContainer';
-import NavBar from './components/NavBar';
-import Item from './components/Item';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

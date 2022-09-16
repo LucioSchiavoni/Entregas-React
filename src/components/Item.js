@@ -5,17 +5,14 @@ import './style.css';
 
 const Item = ({ info }) => {
     return (
-        <div>
+    <div className='card-item'>
             <img className='item' src={info.img} alt="" />
             <hr />
             <h5 className="item-content">{info.name}</h5>
             <Link to='/ItemDetailContainer' className='btn btn-light'> Detalles</Link>
-        </div>
-
+            </div>
+                 
     );
-
-
-
 };
 
 

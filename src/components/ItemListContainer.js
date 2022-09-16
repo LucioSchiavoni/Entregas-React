@@ -375,11 +375,12 @@ export const ItemListContainer = () => {
 
 
     return (
-        <>
-
+        
+        <div className='body-container'>
+<div className='item-grid'>
             <ItemList data={data} />
-
-        </>
-    )
+            </div>
+            </div>     
+)
 };
 
