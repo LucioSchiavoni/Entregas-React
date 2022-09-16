@@ -360,7 +360,7 @@ const productos = [
 export const ItemDetailContainer = () => {
 
     const [data, setData] = useState({});
-    const [detalleId] = useParams
+    const { detalleId } = useParams();
     useEffect(() => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
