@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import ItemDetail from './ItemDetail';
+
+import { ItemDetail } from './ItemDetail';
 import qatar from '../assets/img/qatar.png';
 import qatar2 from '../assets/img/qatar2.png';
 import ecuador from '../assets/img/ecuador.png';
@@ -119,7 +120,7 @@ const productos = [
         precio: 145,
         marca: "",
         img: iran,
-        img2: iran
+        img2: iran2
 
     },
     {
@@ -361,19 +362,24 @@ export const ItemDetailContainer = () => {
 
     const [data, setData] = useState({});
     const { detalleId } = useParams();
+
     useEffect(() => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
                 resolve(productos);
 
-            }, 2000)
+            }, 2000);
         });
         getData.then(res => setData(res.find(productos => productos.id === parseInt(detalleId))));
     }, [])
 
     return (
-        <ItemDetail data={data} />
-    )
+        <div className='body-container'>
+            <div className='item-grid'>
+                <ItemDetail data={data} />
+            </div>
+        </div>
+    );
 }
 
 export default ItemDetailContainer;

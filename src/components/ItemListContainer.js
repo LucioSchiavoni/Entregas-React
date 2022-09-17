@@ -65,7 +65,7 @@ import uruguay from '../assets/img/uruguay.png';
 import uruguay2 from '../assets/img/uruguay2.png';
 import korea from '../assets/img/proximamente.png';///faltan
 import korea2 from '../assets/img/proximamente.png';///faltan
-import proximamente from '../assets/img/proximamente.png';
+
 
 const productos = [
 
@@ -365,7 +365,7 @@ export const ItemListContainer = () => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
                 resolve(productos);
-            }, 3000);
+            }, 2000);
         });
         getData.then(res => setData(res));
     }, [])

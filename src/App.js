@@ -19,7 +19,7 @@ export const App = () => {
         <NavBar />
         <Routes>
           <Route path='/' element={<ItemListContainer />} />
-          <Route path='/detalle' element={<ItemDetailContainer />} />
+          <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
         </Routes>
 
       </BrowserRouter>
