@@ -20,7 +20,7 @@ export const ItemDetail = ({ data }) => {
             <p className="item-content"> precio: {data.precio}</p>
             <button className='btn btn-light btn-detalles' >Comprar</button>
             {
-                carrito ? <Link to=''></Link> : <ItemCount initial={1} stock={10} onAdd={onAdd} />
+                carrito ? <Link to='/CartContext'>Carrito</Link> : <ItemCount initial={1} stock={10} onAdd={onAdd} />
             }
         </div>
 
