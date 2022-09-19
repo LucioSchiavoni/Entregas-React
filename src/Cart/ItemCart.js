@@ -7,10 +7,10 @@ const ItemCart = ({ product }) => {
         <div>
             <img src={product.img1} alt={product.name} />
             <div>
-                <p>Kit: {product.name}</p>
-                <p>Cantidad: {product.quantity}</p>
-                <p>Precio: {product.precio}</p>
-                <p>Subtotal:${product.quantity * product.price}</p>
+                <p className='item-cart'>Kit: {product.name}</p>
+                <p className='item-cart'>Cantidad: {product.quantity}</p>
+                <p className='item-cart'>Precio: {product.precio}</p>
+                <p className='item-cart'>Subtotal:${product.quantity * product.price}</p>
                 <button onClick={() => removeProduct(product.id)}>Eliminar</button>
             </div>
         </div>
