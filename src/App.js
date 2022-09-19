@@ -19,13 +19,14 @@ export const App = () => {
     <>
       <BrowserRouter >
         <NavBar />
-        <CartContext.Provider  >
+        <CartContext.Provider
+        >
           <Routes>
             <Route path='/' element={<ItemListContainer />} />
             <Route path='/pages/Nosotros' element={<Nosotros />} />
             <Route path='/pages/Contacto' element={<Contacto />} />
             <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
-            <Route path='/Cart/CartContext' element={<CartContext />} />
+            <Route path='/Cart/ItemCart' element={<CartContext />} />
           </Routes>
         </CartContext.Provider>
       </BrowserRouter>
